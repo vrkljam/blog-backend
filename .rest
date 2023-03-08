@@ -1,1 +1,17 @@
 GET http://localhost:8005/
+###
+POST http://localhost:8005/blah
+content-Type: application/json
+
+
+    {
+        
+        "name":"no trailing commas!",
+        "author": "Mike"
+    }
+
+###
+GET http://localhost:8005/blah/bob
+
+###
+PUT http://localhost:8005/api/articles/react2/upvote
